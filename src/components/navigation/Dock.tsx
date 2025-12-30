@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { iconMagnify } from '@/lib/animations'
-import { Home, BookOpen, Layout, Users } from 'lucide-react'
+import { Home, BookOpen, Layout, Users, Rocket } from 'lucide-react'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 
 const navItems = [
     { icon: Home, label: 'Accueil', path: '/' },
+    { icon: Rocket, label: 'Programme', path: '/program' },
     { icon: BookOpen, label: 'Formations', path: '/courses' },
     { icon: Layout, label: 'Projets', path: '/projects' },
     { icon: Users, label: 'Mentorat', path: '/mentorship' },
