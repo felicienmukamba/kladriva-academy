@@ -1,5 +1,5 @@
 import { useRef, useMemo } from 'react'
-import { useFrame} from '@react-three/fiber'
+import { useFrame } from '@react-three/fiber'
 import { Points, PointMaterial } from '@react-three/drei'
 import * as THREE from 'three'
 import { useTheme3D } from '@/hooks/use-theme-3d'
@@ -56,7 +56,7 @@ export function Starfield({ count = 5000 }: StarfieldProps) {
     }, [])
 
     // Animate stars based on mouse and scroll
-    useFrame((state, delta) => {
+    useFrame((_state, delta) => {
         if (!ref.current) return
 
         // Rotate based on mouse position

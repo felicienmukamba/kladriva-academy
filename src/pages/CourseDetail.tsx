@@ -13,7 +13,7 @@ import {
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { useParams, Link } from 'react-router-dom' // Kept as they are used in the component
+import { useParams, Link } from 'react-router-dom'
 
 export function CourseDetail() {
     const { id } = useParams<{ id: string }>()

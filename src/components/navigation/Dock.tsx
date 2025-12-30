@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { iconMagnify } from '@/lib/animations'
-import { Home, BookOpen, Layout, Users, User } from 'lucide-react'
+import { Home, BookOpen, Layout, Users } from 'lucide-react'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 
 const navItems = [
@@ -9,7 +9,6 @@ const navItems = [
     { icon: BookOpen, label: 'Formations', path: '/courses' },
     { icon: Layout, label: 'Projets', path: '/projects' },
     { icon: Users, label: 'Mentorat', path: '/mentorship' },
-    { icon: User, label: 'Profil', path: '/profile' },
 ]
 
 export function Dock() {
@@ -30,8 +29,8 @@ export function Dock() {
                                         initial="rest"
                                         whileHover="hover"
                                         className={`p-3 rounded-xl transition-colors ${isActive
-                                                ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/30'
-                                                : 'text-muted-foreground hover:bg-white/10 hover:text-foreground'
+                                            ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/30'
+                                            : 'text-muted-foreground hover:bg-white/10 hover:text-foreground'
                                             }`}
                                     >
                                         <item.icon className="h-6 w-6" />
