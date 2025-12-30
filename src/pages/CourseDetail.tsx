@@ -1,21 +1,19 @@
-import { useParams, Link } from 'react-router-dom'
 import { courses } from '@/data/courses'
 import { motion } from 'framer-motion'
-import { fadeInUp, staggerContainer, staggerItem } from '@/lib/animations'
+import { fadeInUp } from '@/lib/animations'
 import {
     ArrowLeft,
     Clock,
     BookOpen,
     Brain,
-    Code2,
     CheckCircle2,
-    Sparkles,
     Users,
     Award,
     Zap
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import { useParams, Link } from 'react-router-dom' // Kept as they are used in the component
 
 export function CourseDetail() {
     const { id } = useParams<{ id: string }>()

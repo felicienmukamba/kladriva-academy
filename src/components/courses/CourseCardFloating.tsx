@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Course } from '@/data/courses'
+import type { Course } from '@/data/courses'
 import { Badge } from '@/components/ui/badge'
 import { hoverLift } from '@/lib/animations'
 import { Clock, BookOpen, ArrowRight, Sparkles } from 'lucide-react'
@@ -47,8 +47,8 @@ export function CourseCardFloating({ course, delay = 0 }: CourseCardFloatingProp
                         <Badge
                             variant="secondary"
                             className={`${course.level === 'Débutant' ? 'bg-green-500/10 text-green-400 border-green-500/20' :
-                                    course.level === 'Intermédiaire' ? 'bg-blue-500/10 text-blue-400 border-blue-500/20' :
-                                        'bg-purple-500/10 text-purple-400 border-purple-500/20'
+                                course.level === 'Intermédiaire' ? 'bg-blue-500/10 text-blue-400 border-blue-500/20' :
+                                    'bg-purple-500/10 text-purple-400 border-purple-500/20'
                                 } backdrop-blur-md font-bold text-[10px] uppercase tracking-tighter`}
                         >
                             {course.level}
